@@ -11,6 +11,7 @@ const app = new Vue({
         winner: null,
         playerSymbol: "X",
         pcSymbol: "O",
+        message: null
     },
 
     methods: {
@@ -73,6 +74,7 @@ const app = new Vue({
                             this.pcFields.length = 0
                             console.log("game finish")
                             console.log("the winner", this.winner)
+                            this.message = "Ha vinto " + this.winner + " !" 
                             controll = 0
                         }
                     }

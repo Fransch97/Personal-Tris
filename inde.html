@@ -11,8 +11,9 @@
 <body>
     
     <div id="app">
-            <!-- <h1>Let's play {{playerName}}!</h1> -->
         <div v-if="playerNameStatus" class="playground">
+            <h1 v-if="message === null">Let's play {{playerName}}!</h1>
+            <h1 v-else="">{{message}}</h1>
             <div v-for="(el,index) in fields" @click=" fieldClick(index),append(index, playerSymbol)"  class="field">
                 <span ></span>
             </div>
