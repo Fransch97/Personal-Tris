@@ -44,7 +44,10 @@ const app = new Vue({
                             console.log(this.fieldsDinamic)
                         }
                     }
-                }else{
+                }else if(this.fieldsDinamic.length === 0){
+                    if(this.message === null){
+                        this.message = "Pareggio!"
+                    }
                     console.log("pareggio")
                 }
             }
