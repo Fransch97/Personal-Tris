@@ -22,3 +22,12 @@
     justify-content: center;
     align-items: center;
 }
+.nickname{
+    text-align: center;
+}
+input{
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border-width: 1px;
+}

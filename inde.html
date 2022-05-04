@@ -11,8 +11,19 @@
 <body>
     
     <div id="app">
-        <div class="playground">
+        <div v-if="playerNameStatus" class="playground">
+            <h1>Let's play {{playerName}}!</h1>
             <div v-for="el in fields" class="field"></div>
+        </div>
+        <div v-else="" class="nickname">
+            <h1>Insert Nickname</h1>
+            <input 
+            type="text"
+            placeholder="Nickname" 
+            v-model="playerName" 
+            @keyup.enter="playerNameStatus = true">  
+            <br>
+            <span>Press Enter</span>
         </div>
     </div>
 
