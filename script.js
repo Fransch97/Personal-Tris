@@ -27,7 +27,7 @@ const app = new Vue({
                 this.playerFields.push(index)
                 console.log(this.playerFields)
                 console.log(this.fieldsDinamic)
-                this.winControlFun(this.playerFields, this.playerSymbol)
+                this.winControlFun(this.playerFields, this.playerName)
                 
                 if(this.winner === null  && this.fieldsDinamic.length > 0){
                     let whileflage = false
